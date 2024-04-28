@@ -1,0 +1,5 @@
+# ACTIVE WORKSPACES ONLY!
+# Over-time this file will be updated to only contain the workspaces that are currently under active development.
+# This is to ensure that already concluded projects are kept for reference, but not hindering any other experiments.
+packages:
+  - apps/qwik-website

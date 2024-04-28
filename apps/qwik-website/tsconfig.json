@@ -1,0 +1,15 @@
+{
+    "extends": "@adaliszk/qwik",
+    "compilerOptions": {
+        "target": "ESNext",
+        "moduleResolution": "Node",
+        "module": "NodeNext",
+        "baseUrl": "src",
+        "outDir": "dist"
+    },
+    "include": [
+        "vite.*",
+        "src/**/*.tsx",
+        "src/**/*"
+    ]
+}

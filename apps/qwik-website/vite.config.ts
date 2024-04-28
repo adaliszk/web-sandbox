@@ -1,0 +1,35 @@
+import { webConfig } from "@adaliszk/web-compiler";
+import { staticAdapter } from "@builder.io/qwik-city/adapters/static/vite";
+import { qwikVite } from "@builder.io/qwik/optimizer";
+import { qwikCity } from "@builder.io/qwik-city/vite";
+
+// noinspection JSUnusedGlobalSymbols
+export default webConfig({
+    sass: false,
+    plugins: [
+        qwikCity(),
+        qwikVite(),
+        staticAdapter({
+            origin: "https://adaliszk.io",
+        }),
+    ],
+    https: false,
+    server: {
+        headers: {
+            // Don't cache the server response in dev mode
+            "Cache-Control": "public, max-age=0",
+        },
+    },
+    preview: {
+        headers: {
+            // Do cache the server response in preview (non-adapter production build)
+            "Cache-Control": "public, max-age=600",
+        },
+    },
+    build: {
+        ssr: true,
+        rollupOptions: {
+            input: ["@qwik-city-plan"],
+        },
+    },
+});
