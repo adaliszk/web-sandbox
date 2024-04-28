@@ -1,0 +1,16 @@
+# Editors
+/.idea
+/.vscode
+
+# Project
+/**/node_modules
+/**/.turbo
+/**/server
+/**/build
+/**/build-*
+/**/dist
+/**/libs
+
+# Environment
+**/*.log*
+**/.env

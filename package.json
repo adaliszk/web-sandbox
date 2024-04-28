@@ -1,0 +1,25 @@
+{
+    "private": true,
+    "license": "BSD 3-Clause",
+    "description": "Monorepo for my experiments involving web technologies,",
+    "author": "Ádám Liszkai <node-toolbox@adaliszk.dev>",
+    "repository": "github:adaliszk/web-prototypes",
+    "type": "module",
+    "scripts": {
+        "reset": "rm -rf **/node_modules && rm pnpm-lock.yaml",
+        "format": "biome format --write .",
+        "lint": "biome lint ./src && astro check"
+    },
+    "engines": { "node": ">=20", "pnpm": ">=9.0" },
+    "devDependencies": {
+        "@adaliszk/typescript": "^5.4.2",
+        "@adaliszk/typescript-testing": "^5.4.3",
+        "@adaliszk/web-compiler": "^5.2.4",
+        "@biomejs/biome": "^1.7.1",
+        "tsup": "^8.0.2",
+        "turbo": "^1.13.3",
+        "typescript": "^5.4.5",
+        "vitest": "^1.5.2",
+        "vite": "^5.2.10"
+    }
+}
