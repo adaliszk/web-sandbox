@@ -1,4 +1,4 @@
-import { component$, Slot } from "@builder.io/qwik";
+import { Slot, component$ } from "@builder.io/qwik";
 import type { RequestHandler } from "@builder.io/qwik-city";
 
 // noinspection JSUnusedGlobalSymbols - This is a middleware that will be automatically picked up by the Qwik City.

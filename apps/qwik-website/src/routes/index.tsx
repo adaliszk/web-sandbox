@@ -1,43 +1,32 @@
-import type { DocumentHead } from "@builder.io/qwik-city";
-import { routeLoader$, Link } from "@builder.io/qwik-city";
-import { parseMarkdown } from "../helpers/markdownParser";
 import { component$ } from "@builder.io/qwik";
+import type { DocumentHead } from "@builder.io/qwik-city";
+import { Link } from "@builder.io/qwik-city";
 
+import { MyExternalFile } from "../../content/collection1";
+
+// noinspection JSUnusedGlobalSymbols
 export const head: DocumentHead = {
     title: "Qwik ISR Prototype",
 };
 
-export const useMarkdownFile = routeLoader$(async () => {
-    const data = await parseMarkdown({ file: "my-external-file" });
-    return {
-        frontmatter: data.frontmatter,
-        content: data.content,
-    };
-})
-
 export default component$(() => {
-    const markdown = useMarkdownFile();
-
     return (
         <>
             <h1>ISG Prototype</h1>
             <p>Markdown contents:</p>
-            <pre>Frontmatter: {JSON.stringify(markdown.value.frontmatter, null, 2)}</pre>
-            {markdown.value.content}
+            <pre>Frontmatter: {JSON.stringify(MyExternalFile.frontmatter, null, 2)}</pre>
+            <MyExternalFile.Content />
 
             <p>Available pages:</p>
             <ul>
                 <li>
-                    {" "}
-                    <Link href={"/foo"}>/foo</Link>{" "}
+                    <Link href={"/page/foo"}>/foo</Link>
                 </li>
                 <li>
-                    {" "}
-                    <Link href={"/bar"}>/bar</Link>{" "}
+                    <Link href={"/page/bar"}>/bar</Link>
                 </li>
                 <li>
-                    {" "}
-                    <Link href={"/qux"}>/qux</Link>{" "}
+                    <Link href={"/page/qux"}>/qux</Link>
                 </li>
             </ul>
         </>

@@ -5,9 +5,10 @@
     "license": "BSD 3-Clause",
     "type": "module",
     "scripts": {
-        "build": "qwik build",
-        "build.client": "echo 'Nothing to build, skipping...' && exit 0",
-        "build.server": "vite build",
+        "build": "pnpm build.contentIndex && qwik build",
+        "build.contentIndex": "tsx scripts/generate-content-index.ts",
+        "build.client": "vite build",
+        "build.server": "vite build -c vite.static.ts",
         "dev": "vite --mode ssr",
         "format": "biome format --write . && biome lint --apply-unsafe ./src",
         "lint": "biome lint --apply-unsafe ./src",
@@ -20,9 +21,10 @@
     },
     "trustedDependencies": ["sharp"],
     "devDependencies": {
-        "@adaliszk/biome": "^1.7.1",
+        "@adaliszk/biome": "^1.7.2",
         "@adaliszk/typescript": "^5.4.2",
-        "@adaliszk/web-compiler": "^5.2.4",
+        "@adaliszk/web-compiler": "^5.2.5",
+        "camelcase": "^8.0.0",
         "typescript": "^5.4.5",
         "vite": "^5.2.10"
     }

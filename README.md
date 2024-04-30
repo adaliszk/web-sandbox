@@ -20,6 +20,6 @@ and references would not break.
 > While normally I would not list development dependencies in the workspace `package.json` files, I have done so
 > in this repository so that anyone could open the individual projects with stackblitz.
 
-| Project                                                                                                | Stage       | Date          | Description                                                                                                       |
-|:-------------------------------------------------------------------------------------------------------|:------------|:--------------|:------------------------------------------------------------------------------------------------------------------|
-| [apps/qwik-website](https://stackblitz.com/github/adaliszk/web-sandbox/tree/develop/apps/qwik-website) | Exploration | April of 2024 | Verifying the capabilities of Qwik to serve a static website with incremental builds and external markdown files. |
+| Project                                                                                                | Stage | Date          | Description                                                                                                       |
+|:-------------------------------------------------------------------------------------------------------|:------|:--------------|:------------------------------------------------------------------------------------------------------------------|
+| [apps/qwik-website](https://stackblitz.com/github/adaliszk/web-sandbox/tree/develop/apps/qwik-website) | Done  | April of 2024 | Verifying the capabilities of Qwik to serve a static website with incremental builds and external markdown files. |
