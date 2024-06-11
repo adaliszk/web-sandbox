@@ -12,7 +12,7 @@ setGlobalDispatcher(new Agent({
 }))
 
 // noinspection JSUnusedGlobalSymbols
-export const onGet: RequestHandler = async ({ request, send, url, method }) => {
+export const onGet: RequestHandler = async ({ request, send, url }) => {
     let domain = request.headers.get("host") ?? "localhost";
     if (DEV_DOMAINS.test(domain) && env.QWIK_DEFAULT_DOMAIN) {
         domain = env.QWIK_DEFAULT_DOMAIN;
