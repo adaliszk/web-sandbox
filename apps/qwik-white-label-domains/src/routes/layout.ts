@@ -22,5 +22,3 @@ export const onGet: RequestHandler = async ({ request, send, url }) => {
     const response = await fetch(targetUrl)
     send(response.status, await response.text());
 };
-
-

@@ -15,8 +15,8 @@
         "preview": "qwik preview"
     },
     "dependencies": {
-        "@builder.io/qwik": "^1.5.6",
-        "@builder.io/qwik-city": "^1.5.6",
+        "@builder.io/qwik": "1.5.2",
+        "@builder.io/qwik-city": "1.5.2",
         "undici": "^6.18.2"
     },
     "trustedDependencies": ["sharp"],
