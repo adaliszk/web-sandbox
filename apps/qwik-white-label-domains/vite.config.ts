@@ -4,10 +4,8 @@ import { qwikVite } from "@builder.io/qwik/optimizer";
 
 // noinspection JSUnusedGlobalSymbols
 export default webConfig({
-    plugins: [
-        qwikCity(),
-        qwikVite(),
-    ],
+    https: false,
+    plugins: [qwikCity(), qwikVite()],
     server: {
         headers: {
             // Don't cache the server response in dev mode
