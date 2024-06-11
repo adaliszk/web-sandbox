@@ -3,3 +3,4 @@
 # This is to ensure that already concluded projects are kept for reference, but not hindering any other experiments.
 packages:
   - apps/qwik-website
+  - apps/qwik-white-label-domains

@@ -16,10 +16,12 @@ Within this repository, my plan is to create projects to explore or learn, then 
 For now, I leave the projects in their original place but disable them in the workspaces definition so that links
 and references would not break.
 
-> NOTE:
+> [!NOTE]
 > While normally I would not list development dependencies in the workspace `package.json` files, I have done so
 > in this repository so that anyone could open the individual projects with stackblitz.
 
-| Project                                                                                                | Stage | Date          | Description                                                                                                       |
-|:-------------------------------------------------------------------------------------------------------|:------|:--------------|:------------------------------------------------------------------------------------------------------------------|
-| [apps/qwik-website](https://stackblitz.com/github/adaliszk/web-sandbox/tree/develop/apps/qwik-website) | Done  | April of 2024 | Verifying the capabilities of Qwik to serve a static website with incremental builds and external markdown files. |
+| Project                                                                                                                        | Stage     | Date          | Description                                                                                                       |
+|:-------------------------------------------------------------------------------------------------------------------------------|:----------|:--------------|:------------------------------------------------------------------------------------------------------------------|
+| [apps/qwik-white-label-domains](https://stackblitz.com/github/adaliszk/web-sandbox/tree/develop/apps/qwik-white-label-domains) | Prototype | June of 2024  | Creating a prototype for a white-label domain resolution with Qwik-City.                                          |
+| [apps/qwik-website](https://stackblitz.com/github/adaliszk/web-sandbox/tree/develop/apps/qwik-website)                         | Prototype | April of 2024 | Verifying the capabilities of Qwik to serve a static website with incremental builds and external markdown files. |
+                               

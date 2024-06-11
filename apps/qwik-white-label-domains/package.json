@@ -1,0 +1,30 @@
+{
+    "private": true,
+    "description": "Example solution for a White-Label Domain resolution with Qwik-City.",
+    "repository": "github:adaliszk/web-sandbox",
+    "license": "BSD 3-Clause",
+    "type": "module",
+    "scripts": {
+        "build": "qwik build",
+        "build.client": "vite build",
+        "build.preview": "vite build --ssr src/entry.preview.tsx",
+        "build.types": "tsc --incremental --noEmit",
+        "dev": "vite --mode ssr",
+        "format": "biome format --write . && biome lint --apply-unsafe ./src",
+        "lint": "biome lint --apply-unsafe ./src",
+        "preview": "qwik preview"
+    },
+    "dependencies": {
+        "@builder.io/qwik": "^1.5.6",
+        "@builder.io/qwik-city": "^1.5.6",
+        "undici": "^6.18.2"
+    },
+    "trustedDependencies": ["sharp"],
+    "devDependencies": {
+        "@adaliszk/biome": "^1.7.5",
+        "@adaliszk/typescript": "^5.4.2",
+        "@adaliszk/web-compiler": "^5.2.10",
+        "typescript": "^5.4.5",
+        "vite": "^5.2.13"
+    }
+}

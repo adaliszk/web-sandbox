@@ -1,0 +1,14 @@
+{
+    "extends": ["@adaliszk/biome"],
+    "files": {
+        "ignore": [
+            "**/.turbo/**",
+            "**/node_modules/**",
+            "**/build*/**",
+            "**/content/**",
+            "**/dist/**",
+            "**/server/**",
+            "**/temp/**"
+        ]
+    }
+}
